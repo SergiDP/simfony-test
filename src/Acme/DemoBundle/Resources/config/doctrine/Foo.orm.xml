@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Acme\DemoBundle\Entity\Foo" table="foo">
+    <id name="index" type="integer" column="index">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nombre" type="string" column="nombre" length="250" nullable="false"/>
+    <field name="apellidos" type="string" column="apellidos" length="250" nullable="false"/>
+    <field name="fecha" type="date" column="fecha" nullable="false"/>
+	 <field name="foobar" type="string" column="foobar" nullable="false"/>
+  </entity>
+</doctrine-mapping>

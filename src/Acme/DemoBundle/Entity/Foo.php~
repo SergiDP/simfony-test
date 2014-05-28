@@ -1,0 +1,61 @@
+<?php
+
+namespace Acme\DemoBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Foo
+ *
+ * @ORM\Table(name="foo")
+ * @ORM\Entity
+ */
+class Foo
+{
+    
+	  /**
+     * @var string
+     *
+     * @ORM\Column(name="foobar2", type="string", length=250, nullable=false)
+     */
+    private $foobar2;
+	/**
+	 
+	 /**
+     * @var string
+     *
+     * @ORM\Column(name="foobar", type="string", length=250, nullable=false)
+     */
+    private $foobar;
+	/**
+     * @var string
+     *
+     * @ORM\Column(name="nombre", type="string", length=250, nullable=false)
+     */
+    private $nombre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="apellidos", type="string", length=250, nullable=false)
+     */
+    private $apellidos;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="fecha", type="date", nullable=false)
+     */
+    private $fecha;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="index", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $index;
+
+
+}

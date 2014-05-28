@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Symfony!</title>
+    </head>
+    <body>
+        <h1>title</h1>
+<form action="{{ path('new') }}" method="post" {{ form_enctype(form) }}>
+{{ form_widget(form) }}
+
+<input type="submit" />
+</form>
+ </body>
+</html>

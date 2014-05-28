@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Symfony!</title>
+    </head>
+    <body>
+        <h1>title</h1>
+
+        <ul id="navigation">
+            {% for f in foo %}
+                <li>{{ f.nombre }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
